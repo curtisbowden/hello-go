@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-  rand.seed(time.Now())
+  rand.seed(time.Now().UnixNano())
   fmt.Println("Hello Go!")
   fmt.Println("Go can print random numbers:", rand.Intn(10))
 }
